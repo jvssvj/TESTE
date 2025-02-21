@@ -22,7 +22,7 @@ export function map(lat, lng, region, country) {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
     }).addTo(mapInstance);
     const customIcon = L.icon({
-        iconUrl: '../src/images/icon-location.svg',
+        iconUrl: './src/images/icon-location.svg',
         iconSize: [42, 42],
         iconAnchor: [16, 52],
         popupAnchor: [5, -40]
