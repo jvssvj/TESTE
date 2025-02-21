@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="src/styles/global.css">
+  <script src="dist/index.js" type="module"></script>
+  
+  <!-- CSS do Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- JS do Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+  <picture class="tracker__picture">
+    <source srcset="./src/images/pattern-bg-mobile.png" media="(max-width:850px)">
+    
+    <img src="./src/images/pattern-bg-desktop.png" alt="">
+  </picture>
+
+  <section class="tracker__form">
+    <h1 class="tracker__t">IP Address Tracker</h1>
+
+    <div class="tracker__input__container">
+
+      <div class="tracker__input__content">
+        <label id="tracker--input--label"  for="tracker--input">Search here</label>
+        <input type="text" name="tracker--input" id="tracker--input" placeholder="Search for any IP address or domain">
+        <input id="tracker--btn" type="button" value="">
+      </div>
+
+      <div class="tracker__input__container__footer">
+        <a class="tracker__form__find__ip" href="https://icanhazip.com/" target="_blank">Don't know your IP?</a>
+        <span id="show--error"></span>
+      </div>
+
+    </div>
+  </section>
+
+  <main class="tracker__infos__container">
+
+    <div class="tracker__infos__container__content">
+
+      <div class="tracker__infos">
+        <span id="tracker__infos__address__t" class="tracker__infos__t">IP Address</span>
+        <span id="tracker__infos__address__ip" class="tracker__infos__detail">192.212.174.101</span>
+      </div>
+      
+      <hr class="line">
+  
+      <div class="tracker__infos">
+        <span id="tracker__infos__location__t" class="tracker__infos__t">Location</span>
+        <span id="tracker__infos__location__info" class="tracker__infos__detail">Brooklyn, NY 10001</span>
+      </div>
+  
+      <hr class="line">
+  
+      <div class="tracker__infos">
+        <span id="tracker__infos__time__t" class="tracker__infos__t">Timezone</span>
+        <span id="tracker__infos__time__info" class="tracker__infos__detail">UTC-05:00</span>
+      </div>
+  
+      <hr class="line">
+  
+      <div class="tracker__infos">
+        <span id="tracker__infos__isp__t" class="tracker__infos__t">Isp</span>
+        <span id="tracker__infos__isp__info" class="tracker__infos__detail">SpaceX Starlink</span>
+      </div>
+
+    </div>
+
+  </main>
+
+  <div id="map"></div>
+  
+  <footer class="attribution">
+    <p >Challenge by <a href="https://www.frontendmentor.io/profile/jvssvj" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-62b518263/" target="_blank">João Vitor</a></p>
+  </footer>
+</body>
+</html>

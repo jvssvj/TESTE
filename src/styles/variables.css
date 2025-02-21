@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: var(--fontRubik);
+}
+
+:root {
+    --fontRubik: "Rubik", serif;
+    --fontRubik400: 400;
+    --fontRubik500: 500;
+    --fontRubik700: 700;
+    --fontSize13px: .8125rem;
+    --fontSize18px: 1.125rem;
+    --fontSize27px: 1.5em;
+    
+
+    --VeryDarkGray: hsl(0, 0%, 17%);
+    --DarkGray: hsl(0, 0%, 59%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Blue: hsl(241, 40%, 46%);
+    --Red: hsl(0, 100%, 44%);
+}

@@ -1,0 +1,19 @@
+{
+  "name": "ip-address-tracker",
+  "version": "1.0.0",
+  "description": "![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/leaflet": "^1.9.16",
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "dev": "npx tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  }
+}

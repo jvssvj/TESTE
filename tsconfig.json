@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "rootDir": "src/scripts",
+    "outDir": "dist",
+    "module": "ESNext",
+    "target": "ESNext"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
